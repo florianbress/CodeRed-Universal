@@ -95,7 +95,7 @@ public:
 		return objectInstances;
 	}
 
-	template<typename U> // Get an object instance by it's name and class type.
+	template<typename U> // Get an object instance by it's name and class type. Example: UTexture2D* texture =  StaticLoadObject<UTexture2D>("WhiteSquare");
 	U* StaticLoadObject(const std::string& objectName)
 	{
 		UClass* staticClass = reinterpret_cast<UClass*>(U::StaticClass());
@@ -129,7 +129,6 @@ private:
 public: // Use these functions to access these specific class instances, they will be set automatically; always remember to null check!
 	class UEngine* IUEngine();
 	class UAudioDevice* IUAudioDevice();
-	class UAudioDevice* IUAudioDevice();
 	class AWorldInfo* IAWorldInfo();
 	class UDateTime* IUDateTime();
 	class UCanvas* IUCanvas();
@@ -137,12 +136,7 @@ public: // Use these functions to access these specific class instances, they wi
 	class UGameViewportClient* IUGameViewportClient();
 	class ULocalPlayer* IULocalPlayer();
 	class APlayerController* IAPlayerController();
-	class UProfile_TA* IUProfile_TA();
-	class USaveData_TA* IUSaveData_TA();
-	class UProductsSave_TA* IUProductsSave_TA();
-	class UPsyNetConnection_X* IUPsyNetConnection_X();
-	class UPsyNet_X* IUPsyNet_X();
-	class URPCQueue_X* IURPCQueue_X();
+
 
 public: // These should only be used by function hooks, do not manually call these.
 	void SetEngine(class UEngine* engine);
