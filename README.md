@@ -30,6 +30,6 @@ Included are the following features, each have their own examples in their own f
 
 If you notice something wrong or if anything can be improved please create a new issue [here](https://github.com/CodeRedRL/CodeRed-Universal/issues/), but do not submit a question to why something isn't working if you do not meet the requirements for this project listed in this README.
 
-## Credits & License
+## License
 
 This repository is licensed under the MIT License, feel free to do what you want but you are responsible for your own actions. Make sure the game you are using this project with allows third party modding.
