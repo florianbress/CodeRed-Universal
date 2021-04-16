@@ -1,6 +1,6 @@
 # CodeRed Universal v1.0.0
 
-A bare-bones template to get your started in Unreal Engine 3 modding that can be used in any game.
+A bare-bones template to get your started in Unreal Engine 3 modding that can be used in any game. When you open this project you WILL have a bunch of errors, you must add your own SDK and configure it as such. The included "PlaceholderSDK" is just an example. Everything you need to know is described via comments throughout the projects source.
 
 #### Requirements
 
@@ -14,10 +14,6 @@ A bare-bones template to get your started in Unreal Engine 3 modding that can be
 The following third party libraries are used for compiling, they are included in this project but can be found below.
 
 - Microsoft Detours https://github.com/microsoft/Detours/
-
-#### Things To Know
-
-When you open this project you WILL have a bunch of errors, you must add your own SDK and configure it as such. The included "PlaceholderSDK" is just an example.
 
 ## Features
 
