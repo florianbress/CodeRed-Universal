@@ -15,7 +15,7 @@ The following third party libraries are used for compiling, they are included in
 
 - Microsoft Detours https://github.com/microsoft/Detours/
 
-### Things To Know
+#### Things To Know
 
 When you open this project you WILL have a bunch of errors, you must add your own SDK and configure it as such. The included "PlaceholderSDK" is just an example.
 
