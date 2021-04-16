@@ -116,7 +116,7 @@ bool CoreComponent::AreGlobalsValid()
 		}
 		else
 		{
-			globalsValid = true;
+			globalsValid = false;
 		}
 
 		alreadyChecked = true;
