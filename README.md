@@ -1,10 +1,10 @@
-## CodeRed Universal v1.0.1
+## CodeRed Universal v1.0.2
 
 A bare-bones template to get your started in Unreal Engine 3 modding that can be used in any game.
 
 To configure for your own game all that you have to do is replace "PlaceholderSDK" with your own and make sure it's included in `pch.hpp`, the included "PlaceholderSDK" is just an example and has basic structs/classes so the project can compile. Please read the comments in the `Core.cpp` file regaurding how to detour Process Event as well.
 
-For instance storage, game state tracker, and function hooks, they are all game-specific; so you will need to add on to it depending on what classes/functions your game uses.
+For instance storage, game state tracker, and function hooks, they are all game-specific; so you will need to add on to it depending on what classes/functions your game uses. There are comments throughout the project explaining how everything works as well as some examples of certain features.
 
 #### Requirements
 
@@ -27,7 +27,7 @@ Included are the following features, each have their own examples in their own f
 - Automatic initialization of globals, along with detouring of the Process Event function.
 - Pre and post function hooking, bind your own functions that fire when an Unreal Engine function fires.
 - Instance storage, static and dynamically store needed classes that can be grabbed at any time.
-- Command, setting, and mod manager. Bind strings to activate mods or change certain settings dynamically (For separate UI/Console interaction).
+- Command, setting, and mod manager. Bind strings to activate mods or change certain settings dynamically (For separate UI/Console interaction such as ImGui).
 - GameState, track where the player is/what type of game they are in at all times.
 
 ## Issues & Feedback
