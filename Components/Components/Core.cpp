@@ -32,7 +32,7 @@ void CoreComponent::InitializeGlobals(HMODULE hModule)
 
 	Console.Initialize(Filesystem::GetCurrentPath(), "CodeRed.log");
 
-	// Populate the GObject and GName addresses.
+	// Populate the GObject and GName addresses, remember to replace "PlaceholderGame" with your game.
 
 	uintptr_t baseAddress = reinterpret_cast<uintptr_t>(GetModuleHandleA("PlaceholderGame.exe"));
 	GObjects = reinterpret_cast<TArray<UObject*>*>(Memory::FindPattern(GetModuleHandleA("PlaceholderGame.exe"), GObjects_Pattern, GObjects_Mask));

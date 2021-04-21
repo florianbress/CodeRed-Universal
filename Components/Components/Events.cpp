@@ -138,7 +138,6 @@ void EventsComponent::FindHookedEvents()
 					PreHookedEvents.emplace(uObject->ObjectInternalInteger, PreEvents[objectFullName]);
 					PreEvents.erase(objectFullName);
 					hooksToFind--;
-					continue;
 				}
 
 				std::map<std::string, EventType>::iterator postIt = PostEvents.find(objectFullName);
@@ -148,7 +147,6 @@ void EventsComponent::FindHookedEvents()
 					PostHookedEvents.emplace(uObject->ObjectInternalInteger, PostEvents[objectFullName]);
 					PostEvents.erase(objectFullName);
 					hooksToFind--;
-					continue;
 				}
 			}
 		}

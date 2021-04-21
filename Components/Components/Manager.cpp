@@ -496,7 +496,7 @@ void ColorSetting::InitializeValues(const ColorTypes& type)
 	}
 	else if (type == ColorTypes::TYPE_HEX)
 	{
-		//ColorValue = UObject::StaticClass()->FromHexColor(StringWrapper(HexValue).ToUnrealString()); // Uses a custom wrapper I made unrelated to this project.
+		//ColorValue = UObject::StaticClass()->FromHexColor(StringWrapper(HexValue).ToUnrealString()); // I have my own custom wrappers, they are too game-specific to implement directly here.
 		R = ColorValue.R;
 		G = ColorValue.G;
 		B = ColorValue.B;
@@ -604,6 +604,8 @@ void ManagerComponent::KeyPressed(const std::string& key)
 {
 	if (key == "NumPadNine")
 	{
+		// Example of modifying a custom setting in a mod.
+
 		ConsoleCommand("placeholder_some_bool", "true");
 	}
 }
@@ -615,7 +617,7 @@ void ManagerComponent::UnrealCommand(const std::string& unrealCommand)
 	if (randomActor)
 	{
 		Console.Write(GetNameFormatted() +  "Executing enreal command: \"" + unrealCommand + "\"");
-		//randomActor->ConsoleCommand(StringWrapper(unrealCommand).ToUnrealString(), false); // I have my own custom wrappers, they are too game-specific to implement  directly here.
+		//randomActor->ConsoleCommand(StringWrapper(unrealCommand).ToUnrealString(), false); // I have my own custom wrappers, they are too game-specific to implement directly here.
 	}
 }
 

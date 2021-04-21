@@ -30,7 +30,7 @@ enum class CommandTypes : uint8_t
 	TYPE_ARGUMENT = 2
 };
 
-// Setting Base Class
+// Setting Base Class.
 
 class Setting
 {
@@ -56,7 +56,7 @@ public:
 	void SetShouldCallback(const bool& bShouldCallback);
 };
 
-// Int Setting Sub-Class
+// Int Setting Sub-Class.
 
 class IntSetting : public Setting
 {
@@ -76,7 +76,7 @@ public:
 	void TriggerCallback() const;
 };
 
-// Float Setting Sub-Class
+// Float Setting Sub-Class.
 
 class FloatSetting : public Setting
 {
@@ -96,7 +96,7 @@ public:
 	void TriggerCallback() const;
 };
 
-// Bool Setting Sub-Class
+// Bool Setting Sub-Class.
 
 class BoolSetting : public Setting
 {
@@ -116,7 +116,7 @@ public:
 	void TriggerCallback() const;
 };
 
-// String Setting Sub-Class
+// String Setting Sub-Class.
 
 class StringSetting : public Setting
 {
@@ -139,7 +139,7 @@ public:
 	void TriggerCallback() const;
 };
 
-// Color Setting Sub-Class
+// Color Setting Sub-Class.
 
 class ColorSetting : public Setting
 {
@@ -183,7 +183,7 @@ private:
 	void InitializeValues(const ColorTypes& type);
 };
 
-// Command Base Class
+// Command Base Class.
 
 class Command
 {
@@ -204,7 +204,7 @@ public:
 	bool IsHidden() const;
 };
 
-// Callback Command Sub-Class
+// Callback Command Sub-Class.
 
 class CallbackCommand : public Command
 {
@@ -219,7 +219,7 @@ public:
 	void TriggerCallback() const;
 };
 
-// Argument Command Sub-Class
+// Argument Command Sub-Class.
 
 class ArgumentCommand : public Command
 {
