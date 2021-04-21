@@ -1,6 +1,10 @@
-# CodeRed Universal v1.0.0
+# CodeRed Universal v1.0.1
 
-A bare-bones template to get your started in Unreal Engine 3 modding that can be used in any game. When you open this project you WILL have a bunch of errors, you must add your own SDK and configure it as such. The included "PlaceholderSDK" is just an example. Everything you need to know is described via comments throughout the projects source.
+A bare-bones template to get your started in Unreal Engine 3 modding that can be used in any game.
+
+You must add your own SDK and configure it as such, the included "PlaceholderSDK" is just an example and has basic structs/classes so the project can compile.
+
+Everything you need to know is described via comments throughout the projects source.
 
 #### Requirements
 

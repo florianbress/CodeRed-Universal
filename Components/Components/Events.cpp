@@ -50,7 +50,7 @@ namespace Functions
 	{
 		if (params)
 		{
-			UGameViewportClient_execHandleKeyPress_Params* handleKeyPress = reinterpret_cast<UGameViewportClient_execHandleKeyPress_Params*>(params);
+			UGameViewportClient_TA_execHandleKeyPress_Params* handleKeyPress = reinterpret_cast<UGameViewportClient_TA_execHandleKeyPress_Params*>(params);
 
 			if (handleKeyPress->EventType == static_cast<uint8_t>(EInputEvent::IE_Released))
 			{
@@ -123,7 +123,7 @@ void EventsComponent::FindHookedEvents()
 {
 	int32_t hooksToFind = static_cast<int32_t>(PreEvents.size() + PostEvents.size());
 
-	for (class UObject* uObject : *UObject::GObjObjects())
+	for (UObject* uObject : *UObject::GObjObjects())
 	{
 		if (hooksToFind > 0)
 		{

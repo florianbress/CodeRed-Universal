@@ -67,6 +67,11 @@ class AHUD* InstancesComponent::IAHUD()
 	return I_AHUD;
 }
 
+class UGameViewportClient* InstancesComponent::IUGameViewportClient()
+{
+	return I_UGameViewportClient;
+}
+
 class ULocalPlayer* InstancesComponent::IULocalPlayer()
 {
 	UEngine* engine = IUEngine();

@@ -496,7 +496,7 @@ void ColorSetting::InitializeValues(const ColorTypes& type)
 	}
 	else if (type == ColorTypes::TYPE_HEX)
 	{
-		ColorValue = UObject::StaticClass()->FromHexColor(StringWrapper(HexValue).ToUnrealString());
+		//ColorValue = UObject::StaticClass()->FromHexColor(StringWrapper(HexValue).ToUnrealString()); // Uses a custom wrapper I made unrelated to this project.
 		R = ColorValue.R;
 		G = ColorValue.G;
 		B = ColorValue.B;

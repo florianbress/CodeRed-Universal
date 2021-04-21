@@ -1,7 +1,5 @@
 #include "Components/Includes.hpp"
 
-// You WILL get errors when you first open this project, you need to replace "PlaceholderSDK" with your own one.
-
 BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserved)
 {
     switch (ul_reason_for_call)

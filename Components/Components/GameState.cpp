@@ -41,7 +41,6 @@ void GameStateComponent::MainMenuAdded()
 
 void GameStateComponent::WaitingForState()
 {
-
 	CurrentState = States::Unknown;
 }
 
