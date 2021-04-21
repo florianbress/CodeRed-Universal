@@ -2,9 +2,9 @@
 
 A bare-bones template to get your started in Unreal Engine 3 modding that can be used in any game.
 
-You must add your own SDK and configure it as such, the included "PlaceholderSDK" is just an example and has basic structs/classes so the project can compile.
+To configure for your own game all that you have to do is replace "PlaceholderSDK" with your own and make sure it's included in `pch.hpp`, the included "PlaceholderSDK" is just an example and has basic structs/classes so the project can compile. Please read the comments in the `Core.cpp` file regaurding how to detour Process Event as well.
 
-Everything you need to know is described via comments throughout the projects source.
+For instance storage, game state tracker, and function hooks, they are all game-specific; so you will need to add on to it depending on what classes/functions your game uses.
 
 #### Requirements
 
