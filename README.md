@@ -37,3 +37,7 @@ If you notice something wrong or if anything can be improved please create a new
 ## License
 
 This repository is licensed under the MIT License, feel free to do what you want but you are responsible for your own actions. Make sure the game you are using this project with allows third party modding.
+
+## Screenshots
+
+![](https://i.imgur.com/ofnaNVV.png)
